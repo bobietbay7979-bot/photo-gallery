@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Interactive Photo Gallery</h1>
+
+        <div id="image">
+            Hover over an image below to display here.
+        </div>
+
+        <div class="gallery">
+            <img class="preview"
+                 src="images/beach.svg"
+                 alt="A quiet beach under a blue sky"
+                 onmouseover="upDate(this)"
+                 onmouseout="unDo()">
+
+            <img class="preview"
+                 src="images/mountain.svg"
+                 alt="Green mountains beneath the morning sun"
+                 onmouseover="upDate(this)"
+                 onmouseout="unDo()">
+
+            <img class="preview"
+                 src="images/forest.svg"
+                 alt="A peaceful forest with tall trees"
+                 onmouseover="upDate(this)"
+                 onmouseout="unDo()">
+        </div>
+    </main>
+</body>
+</html>
